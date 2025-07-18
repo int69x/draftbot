@@ -109,4 +109,5 @@ async def scout(ctx, *, profile_name):
     await ctx.send(report)
 
 
-bot.r
+bot.run(os.getenv("TOKEN"))
+
