@@ -1,0 +1,1 @@
+worker: python bot/draft_bot.py
