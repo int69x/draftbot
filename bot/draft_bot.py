@@ -13,8 +13,10 @@ tree = bot.tree  # Pour slash commands
 async def on_ready():
     print(f"✅ Connecté en tant que {bot.user}")
     try:
-        synced = await tree.sync()
-        print(f"🔁 {len(synced)} commande(s) slash synchronisées.")
+    synced = await bot.tree.sync()
+    print(f"🔁 {len(synced)} commande(s) slash synchronisées.")
+except Exception as e:
+    print(f"Erreur lors de la synchronisation : {e}")
 from discord.ext import commands
 from discord import app_commands
 import os
