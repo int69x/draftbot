@@ -14,7 +14,7 @@ async def on_ready():
     print(f"✅ Connecté en tant que {bot.user}")
     try:
         synced = await tree.sync()
-        print(f"🔁 {len(synced)} commande(s) slash synchronisées.")import discord
+        print(f"🔁 {len(synced)} commande(s) slash synchronisées.")
 from discord.ext import commands
 from discord import app_commands
 import os
