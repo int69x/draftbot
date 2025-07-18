@@ -14,11 +14,14 @@ async def on_ready():
     print(f"✅ Connecté en tant que {bot.user}")
 @bot.event
 async def on_ready():
+@bot.event
+async def on_ready():
     try:
         synced = await bot.tree.sync()
         print(f"🔁 {len(synced)} commande(s) slash synchronisées.")
     except Exception as e:
-        print(f"Erreur lors de la synchronisation des commandes : {e}")
+        print(f"❌ Erreur lors de la synchronisation des commandes : {e}")
+
 from discord.ext import commands
 from discord import app_commands
 import os
